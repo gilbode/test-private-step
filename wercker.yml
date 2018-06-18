@@ -1,0 +1,14 @@
+# wercker.yml
+box: alpine
+build:
+ steps:
+   - script:
+     name: prepare output
+     code: rm -rf $WERCKER_ROOT/.git
+
+publish:
+ steps:
+   - install-packages:
+     packages: ca-certificates
+   - internal/publish-step:
+     private: true
