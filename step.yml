@@ -1,0 +1,6 @@
+# step.yml
+name: test-private-step
+version: 1.0.0
+summary: Testing private steps
+tags:
+ - test
