@@ -7,9 +7,6 @@ build:
      code: rm -rf $WERCKER_ROOT/.git
 
 publish:
- box: debian:stable-slim
  steps:
-   - install-packages:
-     packages: ca-certificates
    - internal/publish-step:
      private: true
