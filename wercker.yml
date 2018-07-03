@@ -5,6 +5,9 @@ build:
    - script:
      name: prepare output
      code: rm -rf $WERCKER_ROOT/.git
+test:
+ steps:
+   - gilbode/test-private-step@1.0.1
 
 publish:
  steps:
